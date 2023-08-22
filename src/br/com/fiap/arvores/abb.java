@@ -20,4 +20,12 @@ public class abb {
             p.dir = insert(p.dir, info);
         return p;
     }
+
+    public void listarEmOrdem(arvore p){
+        if(p != null){
+            listarEmOrdem(p.esq);
+            System.out.println(" " + p.dado);
+            listarEmOrdem(p.dir);
+        }
+    }
 }

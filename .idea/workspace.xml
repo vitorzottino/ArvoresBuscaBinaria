@@ -5,9 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c3bde896-d171-45d8-9f96-1ab66fd329a2" name="Changes" comment="first commit">
-      <change afterPath="$PROJECT_DIR$/src/br/com/fiap/arvores/abb.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/br/com/fiap/arvores/arvore.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/br/com/fiap/arvores/abb.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/fiap/arvores/abb.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/br/com/fiap/test/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/fiap/test/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,6 +23,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/br/com/fiap/arvores/abb.java" root0="SKIP_INSPECTION" />
   </component>
   <component name="ProjectId" id="2UL2sHz32cZkLrEcJMbBxrUryp3" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
