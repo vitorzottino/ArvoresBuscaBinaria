@@ -11,6 +11,7 @@ public class Main {
         abb.root = abb.insert(abb.root, 7);
         System.out.println("Apresentando os elementos da ABB");
         abb.listarEmOrdem(abb.root);
+        System.out.println("Quantidade de nos da ABB: " + abb.contaNos(abb.root, 0));
 
     }
 

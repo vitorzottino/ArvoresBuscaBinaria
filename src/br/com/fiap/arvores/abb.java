@@ -28,4 +28,15 @@ public class abb {
             listarEmOrdem(p.dir);
         }
     }
+
+    public int contaNos(arvore p, int cont){
+
+        if(p!= null){
+            cont +=1;
+            cont = contaNos(p.esq, cont);
+            cont = contaNos(p.dir, cont);
+
+        }
+        return cont;
+    }
 }
