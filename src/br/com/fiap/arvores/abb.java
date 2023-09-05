@@ -21,22 +21,75 @@ public class abb {
         return p;
     }
 
-    public void listarEmOrdem(arvore p){
-        if(p != null){
+    public void listarEmOrdem(arvore p) {
+        if (p != null) {
             listarEmOrdem(p.esq);
             System.out.println(" " + p.dado);
             listarEmOrdem(p.dir);
         }
     }
 
-    public int contaNos(arvore p, int cont){
+    public int contaNos(arvore p, int cont) {
 
-        if(p!= null){
-            cont +=1;
+        if (p != null) {
+            cont += 1;
             cont = contaNos(p.esq, cont);
             cont = contaNos(p.dir, cont);
 
         }
         return cont;
     }
+
+    public boolean consulta(arvore p, int info) {
+        if (p == null)
+            return false;
+        else {
+            if (p.dado == info)
+                return true;
+            else {
+                if (info < p.dado)
+                    return consulta(p.esq, info);
+                else
+                    return consulta(p.dir, info);
+            }
+        }
+    }
+
+    public int contaConsulta(arvore p, int info, int cont) {
+
+        if (p != null) {
+            cont++;
+            if (p.dado == info)
+                return cont;
+            else {
+                if (info < p.dado)
+                    cont = contaConsulta(p.esq, info, cont);
+                else
+                    cont = contaConsulta(p.dir, info, cont);
+            }
+
+        }
+        return cont;
+    }
+
+    public arvore removeValor(arvore p, int info){
+
+        if (p!= null){
+            if (info == p.dado){
+                if (p.esq == null && p.dir == null){
+                    return null;
+                }
+                if (p.esq == null){
+                    return p.dir;
+                }
+            }
+            else {
+                if (info < p.dado)
+                    p.esq = removeValor(p.esq, info);
+                else
+                    p.dir = removeValor(p.dir, info);
+            }
+        }
+    }
+
 }
